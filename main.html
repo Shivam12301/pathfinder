@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualization</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f4f4f4; }
+        #grid { display: grid; grid-template-columns: repeat(20, 25px); grid-template-rows: repeat(20, 25px); }
+        .cell { width: 25px; height: 25px; border: 1px solid #ddd; box-sizing: border-box; }
+        .start { background: green; }
+        .end { background: red; }
+        .wall { background: black; }
+        .path { background: yellow; }
+        .visited { background: lightblue; }
+    </style>
+</head>
+<body>
+    <div id="grid"></div>
+    <script src="pathfinding.js"></script>
+</body>
+</html>
